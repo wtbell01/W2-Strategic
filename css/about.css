@@ -1,0 +1,259 @@
+:root{
+  --site-white:#ffffff;
+  --dark-black:#232121;
+  --medium-black:#333;
+  --light-black:#54595F;
+  --site-light-blue:#00b2e2;
+  --alice-blue:#ecf9ff;
+  --site-green:#6dbe4a;
+  --site-pink:#eca17d;
+  --dark-grey:#808080;
+  --medium-grey:#aaa;
+  --light-grey:#DCDCDC;
+}
+
+/*Showcase*/
+.page-showcase{
+  background: url('/img/work-box-2-videography.jpg') no-repeat center center/cover;
+  height: 58vh;
+  position: relative;
+}
+
+.page-showcase::before{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.text-overlay{
+  position: absolute;
+  color:var(--site-white);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2.75rem;
+  font-weight: bold;
+  z-index: 10;
+}
+
+/*brief description*/
+.brief-description{
+  background-color: var(--site-light-blue);
+  color: var(--site-white);
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.brief-description-title{
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+
+.brief-description-content{
+  width: 70%;
+  margin: 0 auto;
+  line-height: 2.5rem;
+  font-size: 1.05rem;
+}
+
+/*Page container*/
+.page-container{
+  background-color: var(--alice-blue);
+  max-width: 100%;
+  color: var(--dark-black);
+}
+
+/*About container*/
+.about-container{
+  width: 70%;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+/*About title*/
+.about-title{
+  text-align: center;
+  background-color: var(--site-white);
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+/*About image container*/
+.about-image-container{
+  height: 65vh;
+}
+
+.about-image{
+  height: 100%;
+  width: 100%;
+}
+
+.about-content-container{
+  background-color: var(--site-white);
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.about-content{
+  margin: 0 auto;
+  width: 85%;
+  line-height: 2.5rem;
+}
+
+.about-content-text{
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dark-text{
+  font-weight: bold;
+}
+
+/*up to date title*/
+.up-to-date-title{
+  text-align: center;
+}
+
+.up-to-date-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 2rem;
+  max-width: 80%;
+  padding: 6rem 0;
+  margin:0 auto;
+}
+
+.up-to-date-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--site-white);
+  padding:3rem 0 6rem 0;
+  box-shadow: 0 0 5px 2px #DCDCDC;
+}
+
+.up-to-date-box-title{
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.up-to-date-icon i{
+  color: var(--site-white);
+  background-color: var(--site-light-blue);
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.up-to-date-icon i:hover{
+  background-color: var(--site-pink);
+}
+
+/*Media Queries*/
+@media(max-width:1020px){
+  .up-to-date-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 2rem;
+    max-width: 80%;
+  }
+
+  .up-to-date-box{
+    padding:3rem 0 4rem 0;
+  }
+
+}
+
+@media(max-width:750px){
+  /*Showcase*/
+  .page-showcase{
+    height: 40vh;
+  }
+
+  .text-overlay{
+    font-size: 2rem;
+  }
+
+  .brief-description-title{
+    font-size: 1.45rem;
+    margin-bottom: 2rem;
+  }
+
+  .brief-description-content{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 2.5rem;
+    font-size: .95rem;
+  }
+
+  /*About container*/
+  .about-container{
+    width: 100%;
+  }
+
+  .about-image-container{
+    height: 55vh;
+  }
+
+  .about-title{
+    font-size: 1.3rem;
+  }
+
+  .about-content{
+    margin: 0 auto;
+    width: 85%;
+    line-height: 2rem;
+  }
+
+  .about-content-text{
+    font-size: .9rem;
+    margin-bottom: 1.4rem;
+  }
+}
+
+/*Media Queries*/
+@media(max-width:415px){
+  /*Showcase*/
+  .page-showcase{
+    height: 22.5vh;
+  }
+
+  .text-overlay{
+    font-size: 1.1rem;
+  }
+
+  /*brief description*/
+  .brief-description{
+    display: none;
+  }
+
+  /*About image container*/
+  .about-image-container{
+    height: 40vh;
+  }
+
+  /*About title*/
+  .about-title{
+    font-size: .9rem;
+    padding: 1.5rem 0;
+  }
+
+  .about-content{
+    width: 95%;
+  }
+
+  .about-content-text{
+    font-size: .77rem;
+    margin-bottom: .75rem;
+  }
+
+
+}

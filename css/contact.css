@@ -1,0 +1,349 @@
+:root{
+  --site-white:#ffffff;
+  --dark-black:#232121;
+  --medium-black:#333;
+  --light-black:#54595F;
+  --dark-cyan:#0090b8;
+  --site-light-blue:#00b2e2;
+  --skyblue:#00b2e2;
+  --lavender:#D7EFFA;
+  --alice-blue:#ecf9ff;
+  --site-green:#6dbe4a;
+  --site-pink:#eca17d;
+  --dark-grey:#808080;
+  --medium-grey:#aaa;
+  --light-grey:#DCDCDC;
+}
+
+/*Showcase*/
+.page-showcase{
+  background: url('/img/contact-3.jpg') no-repeat center center/cover;
+  height: 58vh;
+  position: relative;
+}
+
+.page-showcase::before{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.text-overlay{
+  position: absolute;
+  color:var(--site-white);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2.75rem;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.contact-container{
+  width: 92%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+}
+
+/*Left side title*/
+.left-side-title-text{
+  display: inline;
+  color: var(--site-white);
+  background-color: var(--site-light-blue);
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: .4rem 5rem;
+}
+
+.office-location-container{
+  display: flex;
+  margin-top: 3.2rem;
+}
+
+.office-location-1{
+  margin-right: 4rem;
+}
+
+.office-name{
+  font-size: 1rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: .6rem;
+}
+
+.office-address,
+.office-city{
+  font-size: 1.1rem;
+  margin-bottom: .6rem;
+  
+
+}
+
+.office-phone{
+  color: var(--site-light-blue);
+  font-size: 1.15rem;
+}
+
+.right-side-title-text{
+  display: inline;
+  background-color: var(--site-pink);
+  color: var(--site-white);
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: .4rem 3.5rem;
+}
+
+.contact-form{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label{
+  font-size: 1rem;
+  margin: 1.2rem 0 .5rem 0;
+}
+
+.form-input{
+  padding: .6rem 0 .6rem .5rem;
+}
+
+.message-input{
+  padding: .5rem 0 3rem .5rem;
+}
+
+/*Remove dark black color on borders when clicked*/
+.form-input:focus,
+.message-input:focus{
+  outline: none;
+}
+
+
+
+.form-submit-button{
+  margin-top: 2rem;
+  width: 30%;
+  padding: .7rem;
+  color: var(--site-white);
+  background-color: var(--skyblue);
+  font-size: 1.15rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  border: solid var(--skyblue) thin;
+  border-radius: 1px;
+}
+
+.career-social{
+  background-color: var(--alice-blue);
+}
+
+.career-social-container{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.career-box{
+  background-color: var(--site-white);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 1rem;
+}
+
+.career-box-title{
+  color: var(--site-light-blue);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.125rem;
+
+}
+
+.career-box-large-text{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.career-box-small-text{
+  width: 80%;
+  line-height: 2rem;
+  font-size: .95rem;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+.social-box{
+  width: 50%;
+  background-color: var(--site-light-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7.5rem 1rem;
+}
+
+.social-box-title{
+  color: var(--lavender);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.125rem;
+}
+
+.social-box-large-text{
+  color: var(--site-white);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.social-box-social-icons{
+  margin-top: 1rem;
+}
+
+.social-box-social-icons i{
+  color: var(--site-white);
+  background-color: var(--dark-cyan);
+  font-size: 1.6rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+/*facebook icon*/
+.social-box-social-icons i:first-child{
+  padding: 1rem 1.25rem;
+}
+
+.social-box-social-icons i:hover{
+  color: var(--dark-cyan);
+  background-color: var(--site-white);
+}
+
+/*Media Queries*/
+@media(max-width:1080px){
+  .contact-container{
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 4rem;
+    justify-items: center;
+  }
+
+  /*Left side title*/
+  .left-side-title{
+    text-align: center;
+  }
+
+  .office-location-1,
+  .office-location-2{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .form-submit-button{
+    margin:2rem auto 0 auto;
+  }
+
+  .career-social-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 8rem 0;
+  }
+
+  .career-box,
+  .social-box{
+    width: 65%;
+  }
+
+  .social-box-large-text,
+  .career-box-large-text{
+    font-size: 2rem;
+  }
+
+
+  .career-box-small-text{
+    width: 95%;
+    font-size: .85rem;
+  }
+
+
+}
+
+
+@media(max-width:630px){
+  .office-location-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.2rem;
+  }
+
+  .office-location-1{
+    margin: 0 0 2rem 0;
+  }
+
+  .social-box-social-icons{
+    display: grid;
+    margin-top: 1.5rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 1.2rem;
+    
+  }
+
+  .social-box-social-icons i{
+    
+  }
+    
+}
+
+/*Media Queries*/
+@media(max-width:415px){
+  /*Showcase*/
+  .page-showcase{
+    height: 22.5vh;
+  }
+
+  .text-overlay{
+    font-size: 1.1rem;
+  }
+
+  /*brief description*/
+  .brief-description{
+    display: none;
+  }
+
+  .contact-container{
+    width: 98%;
+  }
+
+  /*Left side title*/
+  .left-side-title-text,
+  .right-side-title-text{
+    font-size: 1.2rem;
+    padding: .4rem 1rem;
+  }
+  
+  .form-submit-button{
+    width: 50%;
+    padding: .5rem;
+    font-size: 1rem;
+  }
+
+  .career-social-container{
+    display: none;
+  }
+}
