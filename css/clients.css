@@ -72,7 +72,6 @@
 .client-logo-container{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-row-gap: 2rem;
   width: 90%;
   margin: 2rem auto;
 }
@@ -82,6 +81,7 @@
   width: 75%;
   display: flex;
   justify-self: center;
+  margin-bottom: 2rem;
 }
 
 .client-logo-4{
@@ -116,25 +116,13 @@
 
   .brief-description-content{
     width: 80%;
-    margin: 0 auto;
-    line-height: 2.5rem;
     font-size: .95rem;
   }
   
   .client-logo-container{
-    display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-row-gap: 2rem;
-    width: 90%;
-    margin: 2rem auto;
   }
   
-  .client-logo{
-    height: 23vh;
-    width: 75%;
-    display: flex;
-    justify-self: center;
-  }
 }
 
 /*Media Queries*/
