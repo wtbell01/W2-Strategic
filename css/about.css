@@ -123,7 +123,6 @@
 .up-to-date-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-column-gap: 2rem;
   max-width: 80%;
   padding: 6rem 0;
   margin:0 auto;
@@ -137,6 +136,7 @@
   background-color: var(--site-white);
   padding:3rem 0 6rem 0;
   box-shadow: 0 0 5px 2px #DCDCDC;
+  margin-right: 2rem;
 }
 
 .up-to-date-box-title{
@@ -160,14 +160,12 @@
 /*Media Queries*/
 @media(max-width:1020px){
   .up-to-date-container{
-    display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-row-gap: 2rem;
-    max-width: 80%;
   }
 
   .up-to-date-box{
     padding:3rem 0 4rem 0;
+    margin-bottom: 2rem;
   }
 
 }
@@ -254,6 +252,4 @@
     font-size: .77rem;
     margin-bottom: .75rem;
   }
-
-
 }
