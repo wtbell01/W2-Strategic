@@ -50,7 +50,11 @@
   margin: 3rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 3rem;
+}
+
+/*Left side of the contact form*/
+.left-side{
+  margin-right: 3rem;
 }
 
 /*Left side title*/
@@ -127,8 +131,6 @@
 .message-input:focus{
   outline: none;
 }
-
-
 
 .form-submit-button{
   margin-top: 2rem;
@@ -234,9 +236,11 @@
 @media(max-width:1080px){
   .contact-container{
     grid-template-columns: 1fr;
-    grid-column-gap: 0;
-    grid-row-gap: 4rem;
     justify-items: center;
+  }
+
+  .left-side{
+    margin: 0 0 4rem 0;
   }
 
   /*Left side title*/
@@ -280,10 +284,7 @@
     width: 95%;
     font-size: .85rem;
   }
-
-
 }
-
 
 @media(max-width:630px){
   .office-location-container{
@@ -300,14 +301,17 @@
     display: grid;
     margin-top: 1.5rem;
     grid-template-columns: repeat(2,1fr);
-    grid-row-gap: 1.2rem;
-    
+  } 
+  
+  .social-box-social-icons i{
+    margin-right: 1rem;
+    margin-bottom: 1.2rem;
   }
 
-  .social-box-social-icons i{
-    
+  .social-box-social-icons i:nth-child(3),
+  .social-box-social-icons i:nth-child(4){
+    margin-bottom: 0;
   }
-    
 }
 
 /*Media Queries*/
