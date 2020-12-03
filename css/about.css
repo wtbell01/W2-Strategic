@@ -1,3 +1,6 @@
+/*Media Queries for the header start on line 259*/
+
+
 :root{
   --site-white:#ffffff;
   --dark-black:#232121;
@@ -251,5 +254,97 @@
   .about-content-text{
     font-size: .77rem;
     margin-bottom: .75rem;
+  }
+}
+
+
+/*Media Queries for the header*/
+@media(max-width:1156px){
+  .header-container{
+    max-width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-logo{
+    margin: 1rem 0;
+  }
+
+  /*Icon in the header logo*/
+  .header-logo-icon i{
+    font-size: 5rem;
+  }
+
+  /*header logo text*/
+  .header-logo-text{
+    line-height: 1.9rem;
+  }
+
+  /*bottom line in the header logo text*/
+  .header-logo-text-top{
+    font-size: 1.8rem;
+  }
+
+  /*bottom line in the header logo text*/
+  .header-logo-text-bottom{
+    font-size: 1.35rem;
+  }
+
+  .header-menu li{
+    margin:0 2rem;
+  }
+}
+
+@media(max-width:670px){
+  /*Icon in the header logo*/
+  .header-logo-icon i{
+    font-size: 4rem;
+  }
+
+  /*header logo text*/
+  .header-logo-text{
+    line-height: 1.8rem;
+  }
+
+  /*bottom line in the header logo text*/
+  .header-logo-text-top{
+    font-size: 1.7rem;
+  }
+
+  /*bottom line in the header logo text*/
+  .header-logo-text-bottom{
+    font-size: 1.27rem;
+  }
+
+  .header-menu li{
+    font-size: .85rem;
+    margin:0 1.25rem;
+  }
+}
+
+@media(max-width:415px){
+  /*Icon in the header logo*/
+  .header-logo-icon i{
+    font-size: 3rem;
+  }
+
+  /*header logo text*/
+  .header-logo-text{
+    line-height: 1.4rem;
+  }
+
+  /*bottom line in the header logo text*/
+  .header-logo-text-top{
+    font-size: 1.4rem;
+  }
+
+  /*bottom line in the header logo text*/
+  .header-logo-text-bottom{
+    font-size: 1.03rem;
+  }
+  .header-menu li{
+    font-size: .7rem;
+    margin:0 .4rem;
   }
 }
