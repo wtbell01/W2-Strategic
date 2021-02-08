@@ -266,10 +266,11 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 2rem 2rem 0;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
-/*Remove margin bottom on the bottom row about icons*/
+/*Remove margin bottom on the bottom row of about icons*/
 .about-icon:nth-child(4), .about-icon:nth-child(5),
 .about-icon:nth-child(6){
   margin-bottom: 0;
